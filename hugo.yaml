@@ -587,7 +587,7 @@ params:
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/in/aminimehr/   # optional but strongly recommended
       customIcons:
-        - icon: /googlescholar.svg
+        - icon: googlescholar.svg
           url: https://scholar.google.com/citations?user=Wzr6LJEAAAAJ&hl=en
 
   # About
