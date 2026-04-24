@@ -567,8 +567,7 @@ params:
     title: "Amin."
     subtitle: "I am a Data Scientist and ML Engineer."
     content: >
-     My focus is on theories and applications of modern statistics in different sectors including Finance, Business, Health and Traffic. I have a long-standing interest in chess,
-     which has shaped my analytical thinking, and I value discipline and consistency through regular physical training.
+     My focus is on theories and applications of modern statistics in different sectors including Finance, Business, Health and Traffic. 
     image: /images/Amin_Original.jpg
   
     bottomImage:
@@ -598,7 +597,9 @@ params:
     content: |-
       Currently I am a Ph.D. student in Business Analytics at the University of Cincinnati, Lindner College of Business. My research focus is on empirical asset pricing using machine learning. My research also involves theoretical and empirical properties of machine learning and deep learning methods, as well as the advantages and disadvantages of ML compared to conventional statistical methods.
 
-      In addition to my research, I am also involved in teaching and mentoring students since 2021 with more than 2K in-person and online students in Iran and United States in total. I have more than 100 hours of recorded class videos in this area (See teaching section). I enjoy explaining quantitative methods in economics, econometrics, and finance, with an emphasis on building intuition behind formal models and bridging theory with practical applications using Python programming language.
+      In addition to my research, I have been also involved in teaching and mentoring students since 2021 with more than 2K in-person and online students in Iran and United States in total. I have more than 100 hours of recorded class videos in this area (See teaching section). I enjoy explaining quantitative methods in economics, econometrics, and finance, with an emphasis on building intuition behind formal models and bridging theory with practical applications using Python programming language.
+
+      Also, I have a long-standing interest in chess, which has shaped my analytical thinking, and I value discipline and consistency through regular physical training.
 
     skills:
       enable: true
