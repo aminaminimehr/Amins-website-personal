@@ -100,11 +100,29 @@
                     </li>
                     {{ end }}
 
+                    {{ if and (.Site.Params.publications.enable | default false) (not (.Site.Params.navbar.menus.disablePublications | default false)) }}
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="{{ .Site.Home.RelPermalink }}#publications"
+                            aria-label="publications">
+                            {{ .Site.Params.publications.title | default "Publications" }}
+                        </a>
+                    </li>
+                    {{ end }}
+
                     {{ if and (.Site.Params.experience.enable | default false) (not (.Site.Params.navbar.menus.disableExperience | default false)) }}
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="{{ .Site.Home.RelPermalink }}#experience"
                             aria-label="experience">
                             {{ .Site.Params.experience.title | default (i18n "nav_experience") }}
+                        </a>
+                    </li>
+                    {{ end }}
+
+                    {{ if and (.Site.Params.experience_ind.enable | default false) (not (.Site.Params.navbar.menus.disableExperienceInd | default false)) }}
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="{{ .Site.Home.RelPermalink }}#experience_ind"
+                            aria-label="industry-experience">
+                            {{ .Site.Params.experience_ind.title | default "Industry Experience" }}
                         </a>
                     </li>
                     {{ end }}

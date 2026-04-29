@@ -1,6 +1,6 @@
 baseURL: "https://hugo-profile.netlify.app"
 languageCode: "en-us"
-title: "Hugo Profile"
+title: "Amin Aminimehr"
 theme: hugo-profile
 
 # Multilingual configuration
@@ -548,8 +548,8 @@ params:
     disableSearch: true
     # searchPlaceholder: "Search"
     stickyNavBar:
-      enable : False
-      showOnScrollUp : true
+      enable: true
+      showOnScrollUp: true
     enableSeparator: false
     menus:
       disableAbout: false
@@ -821,6 +821,56 @@ params:
       #   links:
       #     - icon: fab fa-github
       #       url: https://github.com/gurusabarish/HugoProfileV2
+
+  # Publications
+  publications:
+    enable: true
+    title: "Publications"
+    items:
+      - title: "A comprehensive study of market prediction from efficient market hypothesis up to late intelligent market prediction approaches"
+        authors: "A Aminimehr, A Raoofi, A Aminimehr, A Aminimehr"
+        journal: "Computational Economics"
+        volume: "60 (2)"
+        pages: "781-815"
+        year: 2022
+        citations: 22
+        url: "https://scholar.google.com/citations?user=Wzr6LJEAAAAJ&hl=en"
+      - title: "ParsBERT post-training for sentiment analysis of tweets concerning stock market"
+        authors: "M Pouromid, A Yekkehkhani, MA Oskoei, A Aminimehr"
+        journal: "2021 26th International Computer Conference, Computer Society of Iran (CSICC)"
+        year: 2021
+        citations: 21
+        url: "https://scholar.google.com/citations?user=Wzr6LJEAAAAJ&hl=en"
+      - title: "The role of feature engineering in prediction of tehran stock exchange index based on LSTM"
+        authors: "A Aminimehr, A Raoofi, A Aminimehr, A Aminimehr"
+        journal: "Iranian Journal of Economic Studies"
+        volume: "9 (2)"
+        pages: "527-548"
+        year: 2020
+        citations: 8
+        url: "https://scholar.google.com/citations?user=Wzr6LJEAAAAJ&hl=en"
+      - title: "A study on the characteristics of TSE index return data and introducing a regime switching prediction method based on neural networks"
+        authors: "A Aminimehr, S Bajalan, H Hekmat"
+        journal: "Journal of Financial Management Perspective"
+        volume: "11 (34)"
+        pages: "145-171"
+        year: 2021
+        citations: 6
+        url: "https://scholar.google.com/citations?user=Wzr6LJEAAAAJ&hl=en"
+      - title: "The strength of convolutional neural network in financial distress prediction"
+        authors: "A Aminimehr, H Hekmat"
+        journal: "Financial Management Strategy"
+        volume: "11 (2)"
+        pages: "77-96"
+        year: 2023
+        citations: 2
+        url: "https://scholar.google.com/citations?user=Wzr6LJEAAAAJ&hl=en"
+      - title: "Stock market dynamics through deep learning context"
+        authors: "A Aminimehr, A Aminimehr, HM Kamali, S Eetemadi, S Hoseinzade"
+        journal: "arXiv preprint arXiv:2405.09932"
+        year: 2024
+        citations: 4
+        url: "https://scholar.google.com/citations?user=Wzr6LJEAAAAJ&hl=en"
 
   #Contact
   contact:

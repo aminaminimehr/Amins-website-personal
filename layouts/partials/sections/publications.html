@@ -1,0 +1,84 @@
+{{ if .Site.Params.publications.enable | default false }}
+{{- $publications := .Site.Language.Params.publications | default .Site.Params.publications -}}
+<section id="publications" class="py-5">
+    <div class="container">
+        <h3 class="text-center">{{ $publications.title | default "Publications" }}</h3>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="publications-list">
+                    {{ range $publications.items }}
+                    <div class="publication-item card my-3">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ .title }}</h5>
+                            <p class="card-text publication-authors">
+                                <strong>Authors:</strong> {{ .authors }}
+                            </p>
+                            <p class="card-text publication-meta">
+                                <strong>Journal:</strong> {{ .journal }}
+                                {{ if .volume }}
+                                    <br><strong>Volume:</strong> {{ .volume }}
+                                {{ end }}
+                                {{ if .pages }}
+                                    <br><strong>Pages:</strong> {{ .pages }}
+                                {{ end }}
+                                {{ if .year }}
+                                    <strong class="ms-3">Year:</strong> {{ .year }}
+                                {{ end }}
+                                {{ if .citations }}
+                                    <strong class="ms-3">Citations:</strong> {{ .citations }}
+                                {{ end }}
+                            </p>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    #publications {
+        background-color: var(--background-color);
+    }
+
+    #publications h3 {
+        color: var(--text-secondary-color) !important;
+        margin-bottom: 2rem;
+    }
+
+    .publication-item {
+        background-color: var(--secondary-color);
+        border: 1px solid var(--text-secondary-color);
+        border-radius: 0.75rem;
+        transition: box-shadow 0.3s ease;
+    }
+
+    .publication-item:hover {
+        box-shadow: 0px 8px 16px rgba(15, 80, 100, 0.16);
+    }
+
+    .publication-link {
+        color: var(--text-link-color);
+        text-decoration: none;
+    }
+
+    .publication-link:hover {
+        text-decoration: underline;
+    }
+
+    .publication-authors,
+    .publication-meta {
+        color: var(--text-color);
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    #publications .btn {
+        margin-top: 0.5rem;
+    }
+</style>
+{{ end }}

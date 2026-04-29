@@ -1,0 +1,23 @@
+header {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1050;
+    background-color: var(--background-color) !important;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+}
+
+#profileHeader {
+    width: 100%;
+}
+
+#content {
+    padding-top: 90px;
+}
+
+.showHeaderOnTop {
+    position: fixed !important;
+    top: 0;
+}
