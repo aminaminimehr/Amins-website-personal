@@ -595,7 +595,7 @@ params:
     title: "About Me"
     # image: "/images/me.png"
     content: |-
-      Currently I am a Ph.D. student in Business Analytics at the University of Cincinnati, Lindner College of Business. My research focus is on empirical asset pricing using machine learning. My research also involves theoretical and empirical properties of machine learning and deep learning methods, as well as the advantages and disadvantages of ML compared to conventional statistical methods.
+      Currently I am a Ph.D. student in Business Analytics at the University of Cincinnati, Lindner College of Business. For my undergraduate degree, I pursued Financial Management at the University of Tehran, Faculty of Management. My research focus is on empirical asset pricing using machine learning. My research also involves theoretical and empirical properties of machine learning and deep learning methods, as well as the advantages and disadvantages of ML compared to conventional statistical methods.
 
       In addition to my research, I have been also involved in teaching and mentoring students since 2021 with more than 2K in-person and online students in Iran and United States in total. I have more than 100 hours of recorded class videos in this area (See teaching section). I enjoy explaining quantitative methods in economics, econometrics, and finance, with an emphasis on building intuition behind formal models and bridging theory with practical applications using Python programming language.
 
