@@ -13,6 +13,36 @@ header {
     background-color: var(--background-color) !important;
 }
 
+.header-link,
+header .navbar .navbar-nav a,
+header .navbar .nav-link,
+.navbar-brand,
+#theme-toggle,
+.navbar-toggler {
+    color: var(--text-color) !important;
+}
+
+#theme-toggle,
+.navbar-toggler {
+    background-color: var(--secondary-background-color) !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+#theme-toggle {
+    border-radius: 0.5rem;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1) !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: var(--text-link-color) !important;
+}
+
 #profileHeader {
     width: 100%;
 }
