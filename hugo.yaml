@@ -789,6 +789,20 @@ params:
     enable: true
     # title: "Custom Name"
     items:
+      - title: Stock Characters.
+        content: A research project focused on building and analyzing stock-level characteristics for asset pricing applications. The project organizes market and firm-level signals into a reproducible data workflow for studying cross-sectional return patterns and machine learning models in empirical asset pricing.
+        image: /images/project_stock_characters/stock_characters_asset_pricing.png
+        featured:
+          name: GitHub
+          link: https://github.com/aminaminimehr/Stock_Characters
+        badges:
+          - "Asset Pricing"
+          - "Stock Data"
+          - "Python"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/aminaminimehr/Stock_Characters
+
       - title: Traffic Flow Prediction - LSTM Encoder Decoder.
         content:  Developed an encoder–decoder architecture based on Long Short-Term Memory (LSTM) networks to forecast short-term traffic flow across three major metropolitan highways in Tehran. The model leverages sequential time-series data to capture complex temporal dependencies and generate multi-step ahead predictions, supporting more efficient traffic management and congestion analysis. 
         image: /images/project_encoder_decoder_traffic/Fitplot_test_sequence_10.jpg
