@@ -833,7 +833,7 @@ params:
         volume: "60 (2)"
         pages: "781-815"
         year: 2022
-        citations: 22
+        citations: 23
         url: "https://scholar.google.com/citations?user=Wzr6LJEAAAAJ&hl=en"
       - title: "ParsBERT post-training for sentiment analysis of tweets concerning stock market"
         authors: "M Pouromid, A Yekkehkhani, MA Oskoei, A Aminimehr"

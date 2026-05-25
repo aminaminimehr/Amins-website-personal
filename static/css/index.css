@@ -136,6 +136,11 @@ header .navbar.animate {
 
 #hero a.btn.social-icon img {
     width: 1em;
+    filter: brightness(0) saturate(100%) invert(35%) sepia(89%) saturate(2434%) hue-rotate(199deg) brightness(103%) contrast(107%);
+}
+
+.dark #hero a.btn.social-icon img {
+    filter: none;
 }
 
 #hero a.btn.social-icon:hover {
