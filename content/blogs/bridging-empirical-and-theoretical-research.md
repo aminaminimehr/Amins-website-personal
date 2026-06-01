@@ -9,7 +9,7 @@ tags:
   - Empirical Research
   - Theoretical Research
   - Structural Models
-image: /images/post.jpg
+image: /images/Empirics_Structure.png
 description: "Exploring the relationship between empirical research in asset pricing and business, and theoretical structural research, and how we can bridge the gap between them."
 toc: true
 ---
