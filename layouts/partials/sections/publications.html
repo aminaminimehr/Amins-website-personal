@@ -6,10 +6,15 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="publications-list">
-                    {{ range $publications.items }}
+                    {{ range $index, $publication := $publications.items }}
                     <div class="publication-item card my-3">
                         <div class="card-body">
-                            <h5 class="card-title">{{ .title }}</h5>
+                            <div class="publication-heading">
+                                <span class="publication-index">{{ printf "%02d" (add 1 $index) }}</span>
+                                <h5 class="card-title">
+                                    {{ if .url }}<a class="publication-link" href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
+                                </h5>
+                            </div>
                             <p class="card-text publication-authors">
                                 <strong>Authors:</strong> {{ .authors }}
                             </p>
@@ -36,49 +41,4 @@
         </div>
     </div>
 </section>
-<style>
-    #publications {
-        background-color: var(--background-color);
-    }
-
-    #publications h3 {
-        color: var(--text-secondary-color) !important;
-        margin-bottom: 2rem;
-    }
-
-    .publication-item {
-        background-color: var(--secondary-color);
-        border: 1px solid var(--text-secondary-color);
-        border-radius: 0.75rem;
-        transition: box-shadow 0.3s ease;
-    }
-
-    .publication-item:hover {
-        box-shadow: 0px 8px 16px rgba(15, 80, 100, 0.16);
-    }
-
-    .publication-link {
-        color: var(--text-link-color);
-        text-decoration: none;
-    }
-
-    .publication-link:hover {
-        text-decoration: underline;
-    }
-
-    .publication-authors,
-    .publication-meta {
-        color: var(--text-color);
-        font-size: 0.95rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .card-body {
-        padding: 1.5rem;
-    }
-
-    #publications .btn {
-        margin-top: 0.5rem;
-    }
-</style>
 {{ end }}

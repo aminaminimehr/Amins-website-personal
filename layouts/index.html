@@ -2,15 +2,6 @@
 <meta name="description" content={{ .Site.Params.description }}>
 <link rel="stylesheet" href="{{ (printf "%scss/index.css" (.Site.Params.staticPath | default "")) | relURL }}" media="all">
 <link rel="stylesheet" href="{{ (printf "%scss/projects.css" (.Site.Params.staticPath | default "")) | relURL }}" media="all">
-<style>
-    #hero a.btn.social-icon img[src$="scholar_icon.svg"] {
-        filter: brightness(0) saturate(100%) invert(35%) sepia(89%) saturate(2434%) hue-rotate(199deg) brightness(103%) contrast(107%) !important;
-    }
-
-    .dark #hero a.btn.social-icon img[src$="scholar_icon.svg"] {
-        filter: none !important;
-    }
-</style>
 
 <!-- fontawesome -->
 <script defer src="{{ (printf "%sfontawesome-6/all-6.4.2.js" (.Site.Params.staticPath | default "")) | relURL }}"></script>

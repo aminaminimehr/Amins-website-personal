@@ -63,7 +63,11 @@
                 {{ end }}
             </a> -->
             <a class="navbar-brand primary-font text-wrap" href="{{ .Site.Home.RelPermalink }}">
-            {{ .Site.Params.navbar.brandName | default .Site.Params.title }}
+                <span class="brand-sigil" aria-hidden="true">AA</span>
+                <span class="brand-copy">
+                    <strong>{{ .Site.Params.navbar.brandName | default .Site.Params.title }}</strong>
+                    <small>Quant Research</small>
+                </span>
             </a>
 
             {{ if not (.Site.Params.navbar.disableSearch | default false) }}

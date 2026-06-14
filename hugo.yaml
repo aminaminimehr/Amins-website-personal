@@ -488,8 +488,8 @@ Menus:
     #   weight: 2
 
 params:
-  title: "Hugo Profile"
-  description: Text about my cool site
+  title: "Amin Aminimehr"
+  description: "Research portfolio of Amin Aminimehr, focused on machine learning, empirical asset pricing, and business analytics."
   # staticPath: ""  # The path to serve the static files from
   favicon: "/favicon.svg"
 
@@ -510,8 +510,8 @@ params:
   animate: true
 
   theme:
-    # disableThemeToggle: true
-    # defaultTheme: "light" # dark
+    disableThemeToggle: true
+    defaultTheme: "dark"
 
   font:
     fontSize: 1rem # default: 1rem
@@ -522,22 +522,22 @@ params:
   # color preference
   # When using hex codes for colors, quotations must be used along with the # sign
   color:
-    textColor: "#343a40"
-    secondaryTextColor: "#6c757d"
-    textLinkColor: "#343a40"
-    backgroundColor: "#ffffff"
-    secondaryBackgroundColor: "#f8f9fa"
-    primaryColor: "#007bff"
-    secondaryColor: "#f8f9fa"
+    textColor: "#E7EEF5"
+    secondaryTextColor: "#94A6B8"
+    textLinkColor: "#00D084"
+    backgroundColor: "#0B1420"
+    secondaryBackgroundColor: "#142234"
+    primaryColor: "#00D084"
+    secondaryColor: "#1A2B3D"
 
     darkmode:
-      textColor: "#e4e6eb"
-      secondaryTextColor: "#b0b3b8"
-      textLinkColor: "#ffffff"
-      backgroundColor: "#18191a"
-      secondaryBackgroundColor: "#212529"
-      primaryColor: "#ffffff"
-      secondaryColor: "#212529"
+      textColor: "#E7EEF5"
+      secondaryTextColor: "#94A6B8"
+      textLinkColor: "#00D084"
+      backgroundColor: "#0B1420"
+      secondaryBackgroundColor: "#142234"
+      primaryColor: "#00D084"
+      secondaryColor: "#1A2B3D"
 
   # If you want to customize the menu, you can change it here
   navbar:
