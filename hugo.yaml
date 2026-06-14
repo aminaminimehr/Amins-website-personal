@@ -847,51 +847,58 @@ params:
         volume: "60 (2)"
         pages: "781-815"
         year: 2022
-    citations: 24
-    url: "https://scholar.google.com/citations?user=Wzr6LJEAAAAJ&hl=en"
-  - title: "ParsBERT post-training for sentiment analysis of tweets concerning stock market"
-    authors: "M Pouromid, A Yekkehkhani, MA Oskoei, A Aminimehr"
-    journal: "2021 26th International Computer Conference, Computer Society of Iran (CSICC)"
-    year: 2021
-    citations: 22
-    url: "https://scholar.google.com/citations?user=Wzr6LJEAAAAJ&hl=en"
-  - title: "The role of feature engineering in prediction of tehran stock exchange index based on LSTM"
-    authors: "A Aminimehr, A Raoofi, A Aminimehr, A Aminimehr"
-    journal: "Iranian Journal of Economic Studies"
-    volume: "9 (2)"
-    pages: "527-548"
-    year: 2020
-    citations: 8
-    url: "https://scholar.google.com/citations?user=Wzr6LJEAAAAJ&hl=en"
-  - title: "A study on the characteristics of TSE index return data and introducing a regime switching prediction method based on neural networks"
-    authors: "A Aminimehr, S Bajalan, H Hekmat"
-    journal: "Journal of Financial Management Perspective"
-    volume: "11 (34)"
-    pages: "145-171"
-    year: 2021
-    citations: 6
-    url: "https://scholar.google.com/citations?user=Wzr6LJEAAAAJ&hl=en"
-  - title: "The strength of convolutional neural network in financial distress prediction"
-    authors: "A Aminimehr, H Hekmat"
-    journal: "Financial Management Strategy"
-    volume: "11 (2)"
-    pages: "77-96"
-    year: 2023
-    citations: 2
-    url: "https://scholar.google.com/citations?user=Wzr6LJEAAAAJ&hl=en"
-  - title: "Stock market dynamics through deep learning context"
-    authors: "A Aminimehr, A Aminimehr, HM Kamali, S Eetemadi, S Hoseinzade"
-    journal: "arXiv preprint arXiv:2405.09932"
-    year: 2024
-    citations: 5
-    url: "https://scholar.google.com/citations?user=Wzr6LJEAAAAJ&hl=en"
-  - title: "Assessing the success rate of reforming the budgeting system from the perspective of government employees and managers"
-    authors: "A Aminimehr, A Aminimehr"
-    journal: "Governmental Accounting"
-    volume: "9 (2)"
-    pages: "187-206"
-    year: 2024
-    citations: 0
+        citations: 24
+        url: "https://scholar.google.com/citations?user=Wzr6LJEAAAAJ&hl=en"
+      - title: "ParsBERT post-training for sentiment analysis of tweets concerning stock market"
+        authors: "M Pouromid, A Yekkehkhani, MA Oskoei, A Aminimehr"
+        journal: "2021 26th International Computer Conference, Computer Society of Iran (CSICC)"
+        year: 2021
+        citations: 22
+        url: "https://scholar.google.com/citations?user=Wzr6LJEAAAAJ&hl=en"
+      - title: "The role of feature engineering in prediction of tehran stock exchange index based on LSTM"
+        authors: "A Aminimehr, A Raoofi, A Aminimehr, A Aminimehr"
+        journal: "Iranian Journal of Economic Studies"
+        volume: "9 (2)"
+        pages: "527-548"
+        year: 2020
+        citations: 8
+        url: "https://scholar.google.com/citations?user=Wzr6LJEAAAAJ&hl=en"
+      - title: "A study on the characteristics of TSE index return data and introducing a regime switching prediction method based on neural networks"
+        authors: "A Aminimehr, S Bajalan, H Hekmat"
+        journal: "Journal of Financial Management Perspective"
+        volume: "11 (34)"
+        pages: "145-171"
+        year: 2021
+        citations: 6
+        url: "https://scholar.google.com/citations?user=Wzr6LJEAAAAJ&hl=en"
+      - title: "The strength of convolutional neural network in financial distress prediction"
+        authors: "A Aminimehr, H Hekmat"
+        journal: "Financial Management Strategy"
+        volume: "11 (2)"
+        pages: "77-96"
+        year: 2023
+        citations: 2
+        url: "https://scholar.google.com/citations?user=Wzr6LJEAAAAJ&hl=en"
+      - title: "Stock market dynamics through deep learning context"
+        authors: "A Aminimehr, A Aminimehr, HM Kamali, S Eetemadi, S Hoseinzade"
+        journal: "arXiv preprint arXiv:2405.09932"
+        year: 2024
+        citations: 5
+        url: "https://scholar.google.com/citations?user=Wzr6LJEAAAAJ&hl=en"
+      - title: "Assessing the success rate of reforming the budgeting system from the perspective of government employees and managers"
+        authors: "A Aminimehr, A Aminimehr"
+        journal: "Governmental Accounting"
+        volume: "9 (2)"
+        pages: "187-206"
+        year: 2024
+        citations: 0
+        url: "https://scholar.google.com/citations?user=Wzr6LJEAAAAJ&hl=en"
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
     btnName: Mail me
     btnLink: mailto:aminiman@mail.uc.edu
     # formspree:
