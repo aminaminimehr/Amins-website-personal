@@ -131,13 +131,6 @@ header .navbar .nav-link::after {
     border-bottom: 1px solid var(--academic-line);
 }
 
-.hero-layout {
-    display: grid;
-    grid-template-columns: 230px minmax(0, 1fr);
-    gap: 3rem;
-    align-items: start;
-}
-
 .profile-photo {
     max-width: 230px;
     margin: 0;
@@ -152,14 +145,6 @@ header .navbar .nav-link::after {
     object-fit: cover;
     object-position: center 24%;
     filter: saturate(0.92) contrast(1.02);
-}
-
-.hero-body {
-    min-width: 0;
-}
-
-.hero-heading {
-    max-width: 860px;
 }
 
 .eyebrow {
@@ -555,11 +540,6 @@ footer .card,
         padding: 3rem 0 3.25rem;
     }
 
-    .hero-layout {
-        grid-template-columns: 180px minmax(0, 1fr);
-        gap: 1.75rem;
-    }
-
     .profile-photo {
         max-width: 180px;
     }
@@ -634,20 +614,24 @@ footer .card,
         padding-left: 1.12rem;
     }
 
-    .hero-layout {
+    .academic-hero .row {
         display: grid;
         grid-template-columns: 104px minmax(0, 1fr);
         gap: 1rem 0.95rem;
         align-items: start;
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
     }
 
-    .hero-body {
+    .academic-hero .col-lg-3,
+    .academic-hero .col-lg-9 {
         display: contents;
     }
 
     .profile-photo {
         grid-column: 1;
-        grid-row: 1;
+        grid-row: 1 / span 3;
         width: 104px;
         max-width: none;
     }
@@ -657,10 +641,9 @@ footer .card,
         object-position: center 20%;
     }
 
-    .hero-heading {
+    #hero .eyebrow {
         grid-column: 2;
         grid-row: 1;
-        align-self: center;
         min-width: 0;
     }
 
@@ -671,11 +654,15 @@ footer .card,
     }
 
     #hero h1 {
+        grid-column: 2;
+        grid-row: 2;
         font-size: clamp(1.48rem, 6.6vw, 1.82rem);
         line-height: 1.08;
     }
 
     #hero h2 {
+        grid-column: 2;
+        grid-row: 3;
         margin: 0.46rem 0 0;
         font-size: 0.98rem;
         line-height: 1.38;
@@ -683,7 +670,7 @@ footer .card,
 
     .hero-content {
         grid-column: 1 / -1;
-        grid-row: 2;
+        grid-row: 4;
         margin-top: 0.75rem;
         font-size: 0.96rem;
         line-height: 1.72;
@@ -695,7 +682,7 @@ footer .card,
 
     .profile-facts {
         grid-column: 1 / -1;
-        grid-row: 4;
+        grid-row: 6;
         margin-top: 1.15rem;
         border-top: 0;
     }
@@ -723,7 +710,7 @@ footer .card,
 
     .hero-links {
         grid-column: 1 / -1;
-        grid-row: 3;
+        grid-row: 5;
         gap: 0.5rem;
         margin-top: 0.15rem;
         margin-bottom: 0.1rem;

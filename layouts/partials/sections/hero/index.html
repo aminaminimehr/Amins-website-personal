@@ -2,17 +2,19 @@
 {{- $hero := .Site.Language.Params.hero | default .Site.Params.hero -}}
 <section id="hero" class="academic-hero">
     <div class="container">
-        <div class="hero-layout">
-            <figure class="profile-photo">
-                <img src="{{ .Site.Params.hero.image }}" alt="{{ .Site.Params.title }} profile photo">
-            </figure>
-            <div class="hero-body">
-                <div class="hero-heading">
-                    <p class="eyebrow">{{ $hero.intro }}</p>
-                    <h1>{{ $hero.title }}</h1>
-                    <h2>{{ $hero.subtitle }}</h2>
+        <div class="row align-items-start g-4 g-lg-5">
+            <div class="col-lg-3">
+                <figure class="profile-photo">
+                    <img src="{{ .Site.Params.hero.image }}" alt="{{ .Site.Params.title }} profile photo">
+                </figure>
+            </div>
+            <div class="col-lg-9">
+                <p class="eyebrow">{{ $hero.intro }}</p>
+                <h1>{{ $hero.title }}</h1>
+                <h2>{{ $hero.subtitle }}</h2>
+                <div class="hero-content">
+                    {{ $hero.content | markdownify }}
                 </div>
-                <div class="hero-content">{{ $hero.content | markdownify }}</div>
 
                 <dl class="profile-facts">
                     <div>
