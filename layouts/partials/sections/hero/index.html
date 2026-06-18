@@ -1,40 +1,43 @@
 {{ if .Site.Params.hero.enable | default false }}
 {{- $hero := .Site.Language.Params.hero | default .Site.Params.hero -}}
-<section id="hero" class="py-5 align-middle">
-    <div class="terminal-grid" aria-hidden="true"></div>
-    <div class="container px-3 px-sm-5 position-relative">
-        <div class="hero-kicker"><span></span> Research profile / active</div>
-        <div class="row align-items-center g-5">
-            <div class="col-lg-7 content {{ if .Site.Params.animate }}animate{{ end }}" id="primary-font">
-                <span class="subtitle">{{ $hero.intro }}</span>
+<section id="hero" class="academic-hero">
+    <div class="container">
+        <div class="row align-items-start g-4 g-lg-5">
+            <div class="col-lg-3">
+                <figure class="profile-photo">
+                    <img src="{{ .Site.Params.hero.image }}" alt="{{ .Site.Params.title }} profile photo">
+                </figure>
+            </div>
+            <div class="col-lg-9">
+                <p class="eyebrow">{{ $hero.intro }}</p>
                 <h1>{{ $hero.title }}</h1>
                 <h2>{{ $hero.subtitle }}</h2>
-                <p class="hero-content">{{ $hero.content | markdownify }}</p>
-                <div class="hero-actions d-flex flex-wrap align-items-center gap-3">
+                <div class="hero-content">
+                    {{ $hero.content | markdownify }}
+                </div>
+
+                <dl class="profile-facts">
+                    <div>
+                        <dt>Affiliation</dt>
+                        <dd>Ph.D. Student in Business Analytics, University of Cincinnati</dd>
+                    </div>
+                    <div>
+                        <dt>Research</dt>
+                        <dd>Empirical asset pricing, machine learning, market efficiency, model interpretation</dd>
+                    </div>
+                    <div>
+                        <dt>Email</dt>
+                        <dd><a href="mailto:aminiman@mail.uc.edu">aminiman@mail.uc.edu</a></dd>
+                    </div>
+                </dl>
+
+                <div class="hero-links">
                     {{ if .Site.Params.hero.button.enable }}
-                    <a href="{{ .Site.Params.hero.button.url }}" class="btn terminal-primary" {{ cond .Site.Params.hero.button.download "download" "" }} {{ if .Site.Params.hero.button.newPage | default true }}target="_blank"{{ end }}>
-                        <span>View {{ $hero.button.name | default .Site.Params.hero.button.name }}</span><i class="fas fa-arrow-right"></i>
+                    <a href="{{ .Site.Params.hero.button.url }}" class="btn academic-btn" {{ cond .Site.Params.hero.button.download "download" "" }} {{ if .Site.Params.hero.button.newPage | default true }}target="_blank" rel="noopener"{{ end }}>
+                        {{ $hero.button.name | default .Site.Params.hero.button.name }}
                     </a>
                     {{ end }}
                     {{- partial "sections/hero/social.html" . -}}
-                </div>
-                <div class="research-tape" aria-label="Research areas">
-                    <span>Empirical Asset Pricing</span><span>Machine Learning</span><span>Business Analytics</span><span>Finance</span>
-                </div>
-            </div>
-            <div class="col-lg-5">
-                <div class="research-panel {{ if .Site.Params.animate }}animate{{ end }}">
-                    <div class="panel-bar"><span>RESEARCHER_PROFILE</span><span class="live-status">AVAILABLE</span></div>
-                    <div class="profile-frame">
-                        <img src="{{ .Site.Params.hero.image }}" alt="{{ .Site.Params.title }} profile image">
-                        <div class="image-scan" aria-hidden="true"></div>
-                    </div>
-                    <div class="panel-metrics">
-                        <div><small>DOMAIN</small><strong>ML x FINANCE</strong></div>
-                        <div><small>PROGRAM</small><strong>Ph.D.</strong></div>
-                        <div><small>BASE</small><strong>CINCINNATI</strong></div>
-                        <div><small>STATUS</small><strong class="accent">RESEARCHING</strong></div>
-                    </div>
                 </div>
             </div>
         </div>

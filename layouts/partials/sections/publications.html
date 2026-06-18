@@ -1,44 +1,27 @@
 {{ if .Site.Params.publications.enable | default false }}
 {{- $publications := .Site.Language.Params.publications | default .Site.Params.publications -}}
-<section id="publications" class="py-5">
+<section id="publications" class="academic-section">
     <div class="container">
-        <h3 class="text-center">{{ $publications.title | default "Publications" }}</h3>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="publications-list">
-                    {{ range $index, $publication := $publications.items }}
-                    <div class="publication-item card my-3">
-                        <div class="card-body">
-                            <div class="publication-heading">
-                                <span class="publication-index">{{ printf "%02d" (add 1 $index) }}</span>
-                                <h5 class="card-title">
-                                    {{ if .url }}<a class="publication-link" href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
-                                </h5>
-                            </div>
-                            <p class="card-text publication-authors">
-                                <strong>Authors:</strong> {{ .authors }}
-                            </p>
-                            <p class="card-text publication-meta">
-                                <strong>Journal:</strong> {{ .journal }}
-                                {{ if .volume }}
-                                    <br><strong>Volume:</strong> {{ .volume }}
-                                {{ end }}
-                                {{ if .pages }}
-                                    <br><strong>Pages:</strong> {{ .pages }}
-                                {{ end }}
-                                {{ if .year }}
-                                    <strong class="ms-3">Year:</strong> {{ .year }}
-                                {{ end }}
-                                {{ if .citations }}
-                                    <strong class="ms-3">Citations:</strong> {{ .citations }}
-                                {{ end }}
-                            </p>
-                        </div>
-                    </div>
-                    {{ end }}
-                </div>
-            </div>
+        <div class="section-heading">
+            <h3>{{ $publications.title | default "Publications" }}</h3>
+            <p>Selected peer-reviewed and working research in finance, economics, and machine learning.</p>
         </div>
+        <ol class="publication-list">
+            {{ range $index, $publication := $publications.items }}
+            <li class="publication-item">
+                <div class="publication-year">{{ .year }}</div>
+                <div class="publication-body">
+                    <h4>
+                        {{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
+                    </h4>
+                    <p class="publication-authors">{{ .authors }}</p>
+                    <p class="publication-venue">
+                        <em>{{ .journal }}</em>{{ if .volume }}, {{ .volume }}{{ end }}{{ if .pages }}, {{ .pages }}{{ end }}{{ if .citations }}. Citations: {{ .citations }}{{ end }}
+                    </p>
+                </div>
+            </li>
+            {{ end }}
+        </ol>
     </div>
 </section>
 {{ end }}

@@ -1,12 +1,12 @@
-{{ if .Site.Params.experience_ind.enable | default false }}
-{{- $experienceInd:= .Site.Language.Params.experience_ind | default .Site.Params.experience_ind -}}
-<section id="experience_ind" class="academic-section">
+{{ if .Site.Params.experience.enable | default false }}
+{{- $experience := .Site.Language.Params.experience | default .Site.Params.experience -}}
+<section id="experience" class="academic-section">
     <div class="container">
         <div class="section-heading">
-            <h3>{{ $experienceInd.title | default "Industry Experience" }}</h3>
+            <h3>{{ $experience.title | default .Site.Params.experience.title | default (i18n "experience") }}</h3>
         </div>
         <div class="academic-timeline">
-            {{ range $experienceInd.items | default .Site.Params.experience_ind.items }}
+            {{ range $experience.items | default .Site.Params.experience.items }}
             {{ $company := .company }}
             {{ $companyUrl := .companyUrl }}
             {{ range .jobs }}

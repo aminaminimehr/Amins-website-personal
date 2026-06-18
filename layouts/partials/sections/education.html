@@ -1,0 +1,24 @@
+{{ if .Site.Params.education.enable | default false }}
+{{- $education := .Site.Language.Params.education | default .Site.Params.education -}}
+<section id="education" class="academic-section">
+    <div class="container">
+        <div class="section-heading">
+            <h3>{{ $education.title | default .Site.Params.education.title | default (i18n "education") }}</h3>
+        </div>
+        <div class="education-list">
+            {{ range $education.items | default .Site.Params.education.items }}
+            <article class="education-item">
+                <div>
+                    <h4>{{ .title }}</h4>
+                    <p>
+                        {{ if .school.url }}<a href="{{ .school.url }}" target="_blank" rel="noopener">{{ .school.name }}</a>{{ else }}{{ .school.name }}{{ end }}
+                    </p>
+                    {{ if .content }}<div class="education-content">{{ .content | markdownify }}</div>{{ end }}
+                </div>
+                <span>{{ .date }}</span>
+            </article>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

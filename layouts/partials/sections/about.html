@@ -1,0 +1,24 @@
+{{ if .Site.Params.about.enable | default false }}
+{{- $about := .Site.Language.Params.about | default .Site.Params.about -}}
+<section id="about" class="academic-section">
+    <div class="container">
+        <div class="section-heading">
+            <h3>{{ $about.title | default (i18n "about") }}</h3>
+        </div>
+        <div class="academic-prose">
+            {{ $about.content | markdownify }}
+        </div>
+
+        {{ if .Site.Params.about.skills.enable }}
+        <div class="research-keywords">
+            <h4>{{ $about.skills.title | default .Site.Params.about.skills.title }}</h4>
+            <ul>
+                {{ range .Site.Params.about.skills.items }}
+                <li>{{ . | markdownify }}</li>
+                {{ end }}
+            </ul>
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

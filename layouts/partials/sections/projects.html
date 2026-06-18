@@ -1,0 +1,34 @@
+{{ if .Site.Params.projects.enable | default false }}
+{{- $projects := .Site.Language.Params.projects | default .Site.Params.projects -}}
+<section id="projects" class="academic-section">
+    <div class="container">
+        <div class="section-heading">
+            <h3>{{ $projects.title | default .Site.Params.projects.title | default "Research Code" }}</h3>
+            <p>Applied research projects and reproducible code connected to asset pricing, forecasting, and data science.</p>
+        </div>
+        <div class="project-list">
+            {{ range $projects.items | default .Site.Params.projects.items }}
+            <article class="project-item">
+                <div class="project-body">
+                    <h4>{{ .title }}</h4>
+                    <p>{{ .content }}</p>
+                    {{ if .badges }}
+                    <ul class="project-tags">
+                        {{ range .badges }}<li>{{ . }}</li>{{ end }}
+                    </ul>
+                    {{ end }}
+                </div>
+                <div class="project-links">
+                    {{ range .links }}
+                    <a href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ .icon }}"><i class="{{ .icon }}"></i></a>
+                    {{ end }}
+                    {{ if .featured }}
+                    <a class="text-link" href="{{ .featured.link }}" target="_blank" rel="noopener">{{ .featured.name }}</a>
+                    {{ end }}
+                </div>
+            </article>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
