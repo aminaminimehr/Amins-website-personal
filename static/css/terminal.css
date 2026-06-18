@@ -133,7 +133,7 @@ header .navbar .nav-link::after {
 
 .profile-photo {
     max-width: 230px;
-    margin: 0;
+    margin: 1.65rem 0 0;
     border: 1px solid var(--academic-line-strong);
     background: var(--academic-surface);
 }
@@ -542,6 +542,7 @@ footer .card,
 
     .profile-photo {
         max-width: 180px;
+        margin-top: 1.15rem;
     }
 
     .navbar-collapse {
@@ -634,6 +635,7 @@ footer .card,
         grid-row: 1 / span 3;
         width: 104px;
         max-width: none;
+        margin-top: 1rem;
     }
 
     .profile-photo img {
