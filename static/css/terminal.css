@@ -131,6 +131,13 @@ header .navbar .nav-link::after {
     border-bottom: 1px solid var(--academic-line);
 }
 
+.hero-layout {
+    display: grid;
+    grid-template-columns: 230px minmax(0, 1fr);
+    gap: 3rem;
+    align-items: start;
+}
+
 .profile-photo {
     max-width: 230px;
     margin: 0;
@@ -145,6 +152,14 @@ header .navbar .nav-link::after {
     object-fit: cover;
     object-position: center 24%;
     filter: saturate(0.92) contrast(1.02);
+}
+
+.hero-body {
+    min-width: 0;
+}
+
+.hero-heading {
+    max-width: 860px;
 }
 
 .eyebrow {
@@ -246,6 +261,10 @@ header .navbar .nav-link::after {
 
 #hero .hero-links a.btn {
     margin-top: 0 !important;
+}
+
+#hero .hero-links a.academic-btn {
+    color: #fffaf1 !important;
 }
 
 .academic-btn:hover,
@@ -529,15 +548,20 @@ footer .card,
 
 @media (max-width: 991px) {
     #content {
-        padding-top: 70px;
+        padding-top: 66px;
     }
 
     .academic-hero {
-        padding-top: 3.5rem;
+        padding: 3rem 0 3.25rem;
+    }
+
+    .hero-layout {
+        grid-template-columns: 180px minmax(0, 1fr);
+        gap: 1.75rem;
     }
 
     .profile-photo {
-        max-width: 190px;
+        max-width: 180px;
     }
 
     .navbar-collapse {
@@ -560,10 +584,120 @@ footer .card,
 }
 
 @media (max-width: 575px) {
+    #content {
+        padding-top: 60px;
+    }
+
+    header .navbar {
+        padding: 0.58rem 0 !important;
+    }
+
+    .navbar-brand strong {
+        font-size: 0.94rem;
+    }
+
+    .navbar-brand span {
+        font-size: 0.7rem;
+    }
+
+    .navbar-toggler {
+        width: 42px;
+        height: 38px;
+        padding: 0 !important;
+    }
+
+    .navbar-collapse {
+        margin-top: 0.58rem;
+        padding: 0.55rem 0 0.1rem;
+    }
+
+    header .navbar .nav-link {
+        padding: 0.48rem 0 !important;
+        font-size: 0.92rem;
+        text-align: left;
+    }
+
     .academic-hero,
     .academic-section {
-        padding-right: 0.35rem;
-        padding-left: 0.35rem;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .academic-hero {
+        padding-top: 1.6rem;
+        padding-bottom: 2.2rem;
+    }
+
+    .academic-hero .container,
+    .academic-section .container {
+        padding-right: 1.12rem;
+        padding-left: 1.12rem;
+    }
+
+    .hero-layout {
+        display: grid;
+        grid-template-columns: 104px minmax(0, 1fr);
+        gap: 1rem 0.95rem;
+        align-items: start;
+    }
+
+    .hero-body {
+        display: contents;
+    }
+
+    .profile-photo {
+        grid-column: 1;
+        grid-row: 1;
+        width: 104px;
+        max-width: none;
+    }
+
+    .profile-photo img {
+        aspect-ratio: 4 / 5;
+        object-position: center 20%;
+    }
+
+    .hero-heading {
+        grid-column: 2;
+        grid-row: 1;
+        align-self: center;
+        min-width: 0;
+    }
+
+    .eyebrow {
+        margin-bottom: 0.38rem;
+        font-size: 0.68rem;
+        line-height: 1.2;
+    }
+
+    #hero h1 {
+        font-size: clamp(1.48rem, 6.6vw, 1.82rem);
+        line-height: 1.08;
+    }
+
+    #hero h2 {
+        margin: 0.46rem 0 0;
+        font-size: 0.98rem;
+        line-height: 1.38;
+    }
+
+    .hero-content {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        margin-top: 0.75rem;
+        font-size: 0.96rem;
+        line-height: 1.72;
+    }
+
+    .hero-content p {
+        margin-bottom: 0;
+    }
+
+    .profile-facts {
+        grid-column: 1 / -1;
+        grid-row: 4;
+        margin-top: 1.15rem;
+        border-top: 0;
     }
 
     .profile-facts div,
@@ -572,9 +706,138 @@ footer .card,
         gap: 0.35rem;
     }
 
+    .profile-facts div {
+        gap: 0.22rem;
+        padding: 0.78rem 0;
+    }
+
+    .profile-facts dt {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+    }
+
+    .profile-facts dd {
+        font-size: 0.92rem;
+        line-height: 1.45;
+    }
+
+    .hero-links {
+        grid-column: 1 / -1;
+        grid-row: 3;
+        gap: 0.5rem;
+        margin-top: 0.15rem;
+        margin-bottom: 0.1rem;
+    }
+
+    .hero-links > span {
+        gap: 0.38rem;
+    }
+
+    .academic-btn {
+        height: 36px;
+        padding: 0 0.76rem !important;
+        font-size: 0.86rem;
+    }
+
+    #hero a.btn.social-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .academic-section {
+        padding-top: 2.55rem;
+        padding-bottom: 2.55rem;
+    }
+
+    .section-heading {
+        gap: 0.45rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .section-heading h3 {
+        font-size: 1.55rem;
+    }
+
+    .section-heading p,
+    .academic-prose p,
+    .timeline-content p,
+    .timeline-content li,
+    .education-content p,
+    .education-content li,
+    .project-item p,
+    .contact-panel p {
+        font-size: 0.94rem;
+        line-height: 1.68;
+    }
+
+    .research-keywords {
+        margin-top: 1.2rem;
+        padding-top: 1rem;
+    }
+
+    .research-keywords h4 {
+        font-size: 0.95rem;
+    }
+
+    .research-keywords ul,
+    .project-tags {
+        gap: 0.38rem;
+    }
+
+    .research-keywords li,
+    .project-tags li {
+        padding: 0.28rem 0.48rem;
+        font-size: 0.76rem;
+    }
+
+    .publication-list,
+    .academic-timeline,
+    .education-list,
+    .project-list {
+        border-top-color: var(--academic-line-strong);
+    }
+
+    .publication-item,
+    .timeline-item,
+    .education-item,
+    .project-item {
+        padding: 1rem 0;
+    }
+
+    .publication-year,
+    .timeline-date,
+    .education-item > span {
+        font-size: 0.78rem;
+    }
+
+    .publication-body h4,
+    .timeline-body h4,
+    .education-item h4,
+    .project-item h4 {
+        font-size: 0.98rem;
+        line-height: 1.42;
+    }
+
+    .publication-authors,
+    .publication-venue,
+    .timeline-affiliation,
+    .education-item p {
+        font-size: 0.84rem;
+        line-height: 1.45;
+    }
+
+    .project-item {
+        gap: 0.7rem;
+    }
+
+    .project-links {
+        gap: 0.55rem;
+    }
+
     .contact-panel {
         align-items: flex-start;
         flex-direction: column;
+        gap: 0.9rem;
     }
 }
 
