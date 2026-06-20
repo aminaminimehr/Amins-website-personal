@@ -605,7 +605,6 @@ params:
     title: "Industry Experience"
     items:
       - company: "Iran's National Traffic and Transportation Association"
-        companyUrl: "https://example.com"
         jobs:
           - name: "Senior Data Scientist/ML Engineer"
             date: "Aug 2022 - Jul 2024"
@@ -635,7 +634,7 @@ params:
       - company: "UC"
         companyUrl: "https://www.business.uc.edu/faculty-research/obais/faculty/students/amin-aminimehr.html"
         jobs: 
-        - name: "Graduate Teaching Assistant"
+        - name: "Graduate Teaching Assistant & Independent Instructor"
           date: "Aug 2025 - Present"
           # featuredItems:
           #   fontAwesomeIcons:
@@ -648,6 +647,33 @@ params:
           #       url: "https://example.com"
           content: |
             I teach core business analytics courses to undergraduate students at Lindner College of Business, University of Cincinnati.
+
+            **Courses as Independent Instructor:**
+            <table style="border-collapse: collapse; width: 100%; margin-top: -10px; margin-bottom: 16px;">
+            <tr style="border: none;">
+              <td style="padding: 6px 8px; border: none; font-weight: 500; width: 20%; line-height: 1.6;">Summer 2026</td>
+              <td style="padding: 6px 8px; border: none; width: 80%; line-height: 1.6;">Business Analytics II</td>
+            </tr>
+            </table>
+
+            **Courses as Graduate Teaching Assistant:**
+            <table style="border-collapse: collapse; width: 100%; margin-top: -10px;">
+            <tr style="border: none;">
+              <td style="padding: 6px 8px; border: none; font-weight: 500; width: 20%; line-height: 1.6;">Spring 2026</td>
+              <td style="padding: 6px 8px; border: none; width: 50%; line-height: 1.6;">Business Analytics II</td>
+              <td style="padding: 6px 8px; border: none; text-align: left; line-height: 1.6;">By Dr. Iman Attari</td>
+            </tr>
+            <tr style="border: none;">
+              <td style="padding: 6px 8px; border: none; font-weight: 500; width: 20%; line-height: 1.6;">Fall 2025</td>
+              <td style="padding: 6px 8px; border: none; width: 50%; line-height: 1.6;">Management of Operations</td>
+              <td style="padding: 6px 8px; border: none; text-align: left; line-height: 1.6;">By Professor Rao Uday</td>
+            </tr>
+            <tr style="border: none;">
+              <td style="padding: 6px 8px; border: none; font-weight: 500; width: 20%; line-height: 1.6;">Fall 2025</td>
+              <td style="padding: 6px 8px; border: none; width: 50%; line-height: 1.6;">Operations Planning and Scheduling</td>
+              <td style="padding: 6px 8px; border: none; text-align: left; line-height: 1.6;">By Professor Rao Uday</td>
+            </tr>
+            </table>
     
       - company: "UWM"
         companyUrl: "https://uwm.edu/"
@@ -665,6 +691,24 @@ params:
           #       url: "https://example.com"
           content: |
             At the University of Wisconsin-Milwaukee Department of Economics, I conducted weekly review sessions, summarized class materials, and solved problems for undergraduate macroeconomics courses. I also held regular office hours and contributed exam questions.
+            
+            <table style="border-collapse: collapse; width: 100%; margin-top: 8px;">
+            <tr style="border: none;">
+              <td style="padding: 6px 8px; border: none; font-weight: 500; width: 20%; line-height: 1.6;">Spring 2025</td>
+              <td style="padding: 6px 8px; border: none; width: 50%; line-height: 1.6;">Principles of Macroeconomics</td>
+              <td style="padding: 6px 8px; border: none; text-align: left; line-height: 1.6;">By Professor Mohsen Bahmani-Oskooee</td>
+            </tr>
+            <tr style="border: none;">
+              <td style="padding: 6px 8px; border: none; font-weight: 500; width: 20%; line-height: 1.6;">Fall 2024</td>
+              <td style="padding: 6px 8px; border: none; width: 50%; line-height: 1.6;">Principles of Macroeconomics</td>
+              <td style="padding: 6px 8px; border: none; text-align: left; line-height: 1.6;">By Doctor Antu Murshid</td>
+            </tr>
+            <tr style="border: none;">
+              <td style="padding: 6px 8px; border: none; font-weight: 500; width: 20%; line-height: 1.6;">Fall 2024</td>
+              <td style="padding: 6px 8px; border: none; width: 50%; line-height: 1.6;">Principles of Macroeconomics</td>
+              <td style="padding: 6px 8px; border: none; text-align: left; line-height: 1.6;">By Professor Rebecca Neumann</td>
+            </tr>
+            </table>
       - company: "Alzahra University"
         companyUrl: "https://alzahra.ac.ir/"
         jobs: 
