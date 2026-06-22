@@ -741,7 +741,14 @@ params:
           #     - icon: /fav.png
           #       url: "https://example.com"
           content: |
-             I designed a customized course featuring finance-related examples with NumPy and pandas. The course introduced key documentation practices and applied Python tools to solve finance problems and perform financial calculations. It has received more than 7K views and more than 500 enrollments.
+             I designed a customized course featuring finance-related examples with NumPy and pandas. The course introduced key documentation practices and applied Python tools to solve finance problems and perform financial calculations. 
+             
+             **Course Details:**
+             - **Language:** Farsi
+             - **Cost:** Free of charge
+             - **Views:** More than 10K views with more than 500 enrollments
+             
+             **Access the course videos:** <a href="https://t.me/numpy_pandas_aminaminimehr" target="_blank" rel="noopener"><i class="fab fa-telegram"></i> Telegram Channel</a>
  
               
 
