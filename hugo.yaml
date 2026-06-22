@@ -724,7 +724,17 @@ params:
           #     - icon: /fav.png
           #       url: "https://example.com"
           content: |
-             I designed and taught courses in introductory Python programming and financial time series analysis for students from non-engineering backgrounds. More than 40 graduate students from Finance, Accounting, and Economics enrolled at Alzahra University.
+             I designed and taught two courses for students from non-engineering backgrounds. More than 40 graduate students from Finance, Accounting, and Economics enrolled at Alzahra University.
+             
+             **Course 1: Introduction to Python Programming (Non-Engineering Background)**
+             - **Language:** Farsi
+             - **Enrollment:** Previously required, now public
+             - <a href="https://t.me/Intro_Python_nonengineering_alz" target="_blank" rel="noopener"><i class="fab fa-telegram"></i> Access Course Videos on Telegram</a>
+             
+             **Course 2: Introduction to Time Series Analysis using Python**
+             - **Language:** Farsi
+             - **Enrollment:** Previously required, now public
+             - <a href="https://t.me/intro_timeseries_noneng_alz" target="_blank" rel="noopener"><i class="fab fa-telegram"></i> Access Course Videos on Telegram</a>
 
       - company: "University of Tehran"
         companyUrl: "https://ut.ac.ir/en"
