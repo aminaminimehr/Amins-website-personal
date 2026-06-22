@@ -729,12 +729,14 @@ params:
              **Course 1: Introduction to Python Programming (Non-Engineering Background)**
              - **Language:** Farsi
              - **Enrollment:** Previously required, now public
-             - <a href="https://t.me/Intro_Python_nonengineering_alz" target="_blank" rel="noopener"><i class="fab fa-telegram"></i> Access Course Videos on Telegram</a>
+             
+             **Access the course videos:** <a href="https://t.me/Intro_Python_nonengineering_alz" target="_blank" rel="noopener"><i class="fab fa-telegram"></i> Telegram Channel</a>
              
              **Course 2: Introduction to Time Series Analysis using Python**
              - **Language:** Farsi
              - **Enrollment:** Previously required, now public
-             - <a href="https://t.me/intro_timeseries_noneng_alz" target="_blank" rel="noopener"><i class="fab fa-telegram"></i> Access Course Videos on Telegram</a>
+             
+             **Access the course videos:** <a href="https://t.me/intro_timeseries_noneng_alz" target="_blank" rel="noopener"><i class="fab fa-telegram"></i> Telegram Channel</a>
 
       - company: "University of Tehran"
         companyUrl: "https://ut.ac.ir/en"
