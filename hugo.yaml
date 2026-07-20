@@ -651,12 +651,12 @@ params:
             **Courses as Independent Instructor:**
             <table style="border-collapse: collapse; width: 100%; margin-top: -10px; margin-bottom: 16px;">
             <tr style="border: none;">
-              <td style="padding: 6px 8px; border: none; font-weight: 500; width: 20%; line-height: 1.6;">Summer 2026</td>
-              <td style="padding: 6px 8px; border: none; width: 80%; line-height: 1.6;">Business Analytics II</td>
-            </tr>
-            <tr style="border: none;">
               <td style="padding: 6px 8px; border: none; font-weight: 500; width: 20%; line-height: 1.6;">Fall 2026</td>
               <td style="padding: 6px 8px; border: none; width: 80%; line-height: 1.6;">Data Analysis (graduate level)</td>
+            </tr>
+            <tr style="border: none;">
+              <td style="padding: 6px 8px; border: none; font-weight: 500; width: 20%; line-height: 1.6;">Summer 2026</td>
+              <td style="padding: 6px 8px; border: none; width: 80%; line-height: 1.6;">Business Analytics II</td>
             </tr>
             </table>
 
